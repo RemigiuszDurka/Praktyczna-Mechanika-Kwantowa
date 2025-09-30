@@ -315,6 +315,7 @@ dostajemy to samo pole magnetyczne $\vec{B} = \nabla \times \vec{A}$.
 2. Sprawdź ile wynosi komutator $[x_i, p_j]$ oraz $[p_i, p_j]$ przy przejściu do definicji kanonicznego pędu $p_i = -i\hbar\partial_i - qA_i$.
 
 3. Wybierając drugie cechowanie z pierwszego zadania wstaw je do równania Schrödingera. Uwzględniając rozdzielenie zmiennych względem poszczególnych współrzędnych, wprowadź częstość cyklotronową $\omega = \frac{|q|B}{m}$ oraz zmienną $y_0 = - \frac{p_x}{qB}$ aby finalnie otrzymać:
+
 $$
 \left[\frac{\hat{p}_y^2}{2m} + \frac{1}{2} m \omega^2 (y - y_0)^2\right] \chi(y) = \left(E - \frac{p_z^2}{2m}\right) \chi(y)
 $$
@@ -324,11 +325,13 @@ $$
 5. Dla poprzedniego zdania policz jakie mamy stany energii (tzw. stany Landau’a) wykorzystując związki rekurencyjne dla wielomianów Hermite’a.
 
 6. Rachunek zaburzeń dostarcza nam wyrażeń na poprawki energii przy Hamiltonianie interakcji $H_I$ w postaci pierwszej poprawki do energii $E_n^{(1)} = \langle n_0| H_I | n_0 \rangle$ oraz drugiej:
+
 $$
 E_n^{(2)} = \sum_{m \neq n} \frac{|\langle m_0 | H_I | n_0 \rangle|^2}{E_n^{(0)} - E_m^{(0)}}
 $$
 
 W zewnętrznym polu elektrycznym $F$ – skierowanym przeciwnie do osi $x$, potencjał studni kwantowej zmienia kształt wg $V(x) \to V(x) - q \cdot F \cdot x$. Zbadaj w pierwszym i drugim rzędzie rachunku zaburzeń wpływ słabego pola elektrycznego (czyli $H_I=- q \cdot F \cdot x$) na energię stanu podstawowego dla nieskończonej studni potencjału od $-L/2$ do $L/2$,
+
 $$
 |n^0\rangle = \sqrt{\frac{2}{L}} \sin\left(\frac{n\pi}{L}x + \frac{1}{2}n\pi\right).
 $$
