@@ -164,6 +164,7 @@ policz odpowiadające długości fali (inne serie mają wynikowe fale poza spekt
 $$
 R_{nl}(r) = \sqrt{\left(\frac{2}{n a_0^*}\right)^3 \frac{(n - \ell - 1)!}{2n(n + \ell)!}} e^{-\rho/2} \rho^\ell L_{n - \ell - 1}^{2\ell + 1}(\rho)
 $$
+
 gdzie $L_{n - \ell - 1}^{2\ell + 1}$ to wielomiany Laguerre’a, zmienna pomocnicza $\rho = \frac{2r}{n a_0^*}$, zaś $a_0^* = 5.29 \times 10^{-11} \ \text{m}$ to promień pierwszej orbity Bohra.
 
    b. Za pomocą wbudowanej funkcji `SphericalHarmonicY` w Mathematice podaj postać **kątową funkcji falowej** dla atomu wodoru dla wszystkich przypadków do $n = 3$ włącznie. Wskazówka: powinno być ich 9.
