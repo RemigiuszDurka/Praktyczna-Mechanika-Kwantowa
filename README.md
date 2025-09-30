@@ -59,10 +59,13 @@ policz z dokładnością do 20 miejsca po przecinku rozwiązanie równania $\tan
 $$
 \cos(wk) \cosh(b\nu) - \frac{m_b^2 k^2 - m_w^2 \nu^2}{2 m_b m_w k \nu} \sin(wk) \sinh(b\nu) - \cos(g(w + b)) = 0
 $$
-gdzie 
+
+gdzie
+
 $$
 k = \sqrt{\frac{2 m_w E}{\hbar^2}}, \quad \nu = \sqrt{\frac{2 m_b (V_0 - E)}{\hbar^2}}
 $$
+
 Przyjąć też $w = b = 2, 3, 4, 5$ nm.
 
 #### Wskazówka
