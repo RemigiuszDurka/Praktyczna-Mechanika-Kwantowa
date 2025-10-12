@@ -7,8 +7,7 @@ dr Remigiusz Durka, 2026
 
 ![](studnia1.png)
 
-   
-      Zwróć uwagę na kwestie parzystości rozwiązań i kolejnych wzbudzeń oraz unormowania.
+Zwróć uwagę na kwestie parzystości rozwiązań i kolejnych wzbudzeń oraz unormowania.
 
 2. Wygeneruj dla poprzedniego zadania, przy $a = 8$ nm:
    
@@ -18,7 +17,7 @@ dr Remigiusz Durka, 2026
    
 - c. Wygeneruj 5 **osobnych wykresów** modułu funkcji falowej dla pięciu pierwszych stanów wzbudzenia elektronu.
    
-      Znajdź samodzielnie dane jak masa elektronu, stała Plancka i konwersję [Joule] $\rightarrow$ [eV].
+Znajdź samodzielnie dane jak masa elektronu, stała Plancka i konwersję [Joule] $\rightarrow$ [eV].
 
 3. Zbadaj zależność **czterech** pierwszych **poziomów energetycznych** od szerokości studni $w$ dla elektronu w nieskończonej studni potencjału zbudowanej z arsenku galu – GaAs powodującego modyfikację masy $m^* = 0.067m$, gdzie $m$ to masa elektronu. Rozważyć szerokości studni z zakresu $1$ nm $< w <$ $30$ nm. Wyniki przedstaw na jednym wykresie.
 
@@ -413,3 +412,4 @@ Uwaga: zszywanie jak również wartości $l$ trzeba raczej zrealizować numerycz
 Pamiętaj, że podobnie do atomu wodoru, czy studni potencjału, trzeba znaleźć energie wymagające przejścia przez szukanie miejsc zerowych, co powoduje też w rozwiązaniu zależność pewnego $n$ numerującego miejsca zerowe.
 
 Przypadek dla $l = 0$ został pokazany na stronie: [https://www.mindnetwork.us/infinite-spherical-well.html](https://www.mindnetwork.us/infinite-spherical-well.html).
+
