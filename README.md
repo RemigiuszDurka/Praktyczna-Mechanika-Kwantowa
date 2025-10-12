@@ -1,24 +1,28 @@
 # Praktyczna Mechanika Kwantowa 
-dr Remigiusz Durka, 2025
+dr Remigiusz Durka, 2026
 
 ## Lista 1
 
 1. Ustal ręcznie ze stacjonarnego równania Schrödingera **funkcję falową** (łącznie z jej unormowaniem) a także wzór na energię cząstki wewnątrz studni nieskończonego potencjału:
 
 ![](studnia1.png)
+
    
-Zwróć uwagę na kwestie parzystości rozwiązań i kolejnych wzbudzeń oraz unormowania.
+      Zwróć uwagę na kwestie parzystości rozwiązań i kolejnych wzbudzeń oraz unormowania.
 
-1. Wygeneruj dla poprzedniego zadania, przy $a = 8$ nm:
-   - a. **Pojedynczy wykres** energii w eV w zależności od stanu wzbudzenia dla pięciu pierwszych stanów wzbudzenia elektronu.
-   - b. Pokaż na **jednym wykresie** przebieg funkcji falowej dla pięciu pierwszych stanów wzbudzenia elektronu.
-   - c. Wygeneruj 5 **osobnych wykresów** modułu funkcji falowej dla pięciu pierwszych stanów wzbudzenia elektronu.
+2. Wygeneruj dla poprzedniego zadania, przy $a = 8$ nm:
    
-Znajdź samodzielnie dane jak masa elektronu, stała Plancka i konwersję [Joul] $\rightarrow$ [eV].
+- a. **Pojedynczy wykres** energii w eV w zależności od stanu wzbudzenia dla pięciu pierwszych stanów wzbudzenia elektronu.
+   
+- b. Pokaż na **jednym wykresie** przebieg funkcji falowej dla pięciu pierwszych stanów wzbudzenia elektronu.
+   
+- c. Wygeneruj 5 **osobnych wykresów** modułu funkcji falowej dla pięciu pierwszych stanów wzbudzenia elektronu.
+   
+      Znajdź samodzielnie dane jak masa elektronu, stała Plancka i konwersję [Joule] $\rightarrow$ [eV].
 
-2. Zbadaj zależność **czterech** pierwszych **poziomów energetycznych** od szerokości studni $w$ dla elektronu w nieskończonej studni potencjału zbudowanej z arsenku galu – GaAs powodującego modyfikację masy $m^* = 0.067m$, gdzie $m$ to masa elektronu. Rozważyć szerokości studni z zakresu $1$ nm $< w <$ $30$ nm. Wyniki przedstaw na jednym wykresie.
+3. Zbadaj zależność **czterech** pierwszych **poziomów energetycznych** od szerokości studni $w$ dla elektronu w nieskończonej studni potencjału zbudowanej z arsenku galu – GaAs powodującego modyfikację masy $m^* = 0.067m$, gdzie $m$ to masa elektronu. Rozważyć szerokości studni z zakresu $1$ nm $< w <$ $30$ nm. Wyniki przedstaw na jednym wykresie.
 
-3. Mając daną **skończoną studnię kwantową** szerokości $10$ nm, znajdź numerycznie wszystkie poziomy energetyczne dla głębokości potencjału kolejno $V_0 = 0.5$ eV, $1$ eV i $2$ eV. Przyjąć masę elektronu w studni $m_w^* = 0.067m$ oraz wewnątrz bariery $m_b^* = 0.10m$. Numeryczne rozwiązanie może być wdrożone w startowym równaniu Schrödingera (`NDSolve`) lub tylko w jego dalszej części przy równaniach na tangens i cotangens.
+4. Mając daną **skończoną studnię kwantową** szerokości $10$ nm, znajdź numerycznie wszystkie poziomy energetyczne dla głębokości potencjału kolejno $V_0 = 0.5$ eV, $1$ eV i $2$ eV. Przyjąć masę elektronu w studni $m_w^* = 0.067m$ oraz wewnątrz bariery $m_b^* = 0.10m$. Numeryczne rozwiązanie może być wdrożone w startowym równaniu Schrödingera (`NDSolve`) lub tylko w jego dalszej części przy równaniach na tangens i cotangens.
 
 ## Lista 2
 
@@ -70,7 +74,7 @@ Przyjąć też $w = b = 2, 3, 4, 5$ nm.
 
 #### Wskazówka
 
-Zacznij od podania np. 100 punktów g z przedziału (-1,1) w jednostkach $[pi/w]$ i dla nich ustal odpowiadające im wartości energii spełniające podane równanie. Zbierając punkty w pary $(g_i,E_i)$ narysuj wykres, który powinien się przestawiać następująco (`AspectRatio`, podpisane osie, jakaś legenda, linie pomocnicze):
+Zacznij od podania np. 100 punktów g z przedziału (-1,1) w jednostkach $[pi/w]$ i dla nich ustal odpowiadające im wartości energii spełniające podane równanie. Zbierając punkty w pary $(g_i,E_i)$ narysuj wykres, który powinien się przedstawiać następująco (`AspectRatio`, podpisane osie, jakaś legenda, linie pomocnicze):
 
 ![](new-raphson.png)
 
@@ -85,7 +89,7 @@ Zacznij od podania np. 100 punktów g z przedziału (-1,1) w jednostkach $[pi/w]
 ![](studnie-profile.png)
 Realizacja obejmuje wyrysowanie profilu potencjału, znalezienie postaci funkcji (ze startową amplitudą $A = \frac{1}{2}$ lub $\frac{1}{4}$), wykonanie zszywania, wykres części rzeczywistej i urojonej $\psi$ oraz osobnej ilustracji $|\psi|^2$. Przyjąć energię startową tak, by trafiała w połowę maksimum potencjału.
 
-2. Rozważ „kwantowy pryzmat” (potencjał równoboczno-trójkątny) i narysuj przebieg $Re[\psi]$, $Im[\psi]$, $|\psi|^2$ dla fali o początkowej energii o wartości $\frac{1}{3}$, $\frac{2}{3}$ i $\frac{1}{2}$ maksymalnej wysokości potencjału (optymalizuj startową amplitudę by wyszdeł ładny wykres).
+2. Rozważ „kwantowy pryzmat” (potencjał równoboczno-trójkątny) i narysuj przebieg $Re[\psi]$, $Im[\psi]$, $|\psi|^2$ dla fali o początkowej energii o wartości $\frac{1}{3}$, $\frac{2}{3}$ i $\frac{1}{2}$ maksymalnej wysokości potencjału (optymalizuj startową amplitudę by wyszedł ładny wykres).
    
 ![](prism.png)
 
@@ -103,9 +107,9 @@ otrzymamy Energię w postaci $E_n = \hbar\omega\left(n + \frac{1}{2}\right)$. Ws
    - Legendre'a, 
    - Laguerre'a. 
    
-Potem w Mathematice wywołaj zdefiniowane wewnętrznie wielomiany (Help -> HermiteH, etc.) i odtwórz te piątki wielomianów w każdym przypadku jednolinijkowym kodem. Potem komplementarnie wyrysuj na jednym wykresie pierwszych pięć wielomianów Hermite'a dla $-1 < x < 1$. Potem to samo powtórz dla: pięciu wielomianów Chebyshev'a, 5 wielomianów Legendre'a oraz 5 wielomianów Laguerre'a.
+Potem w Mathematice wywołaj zdefiniowane wewnętrznie wielomiany (Help -> HermiteH, etc.) i odtwórz te piątki wielomianów w każdym przypadku jednolinijkowym kodem. Potem wyrysuj na jednym wykresie pierwszych pięć wielomianów Hermite'a dla $-1 < x < 1$. Potem to samo powtórz dla: pięciu wielomianów Chebyshev'a, 5 wielomianów Legendre'a oraz 5 wielomianów Laguerre'a.
 
-5. W książce Schroedingera z 1928 roku pojawia się wykres funkcji falowych oscylatora. Wygeneruj identyczny wykres wychodząc od rozwiązania oscylatora (zadbaj o legendę, dobry przedział, AspectRatio, itd.).
+1. W książce Schroedingera z 1928 roku pojawia się wykres funkcji falowych oscylatora. Wygeneruj identyczny wykres wychodząc od rozwiązania oscylatora (zadbaj o legendę, dobry przedział, AspectRatio, itd.).
 
 **Uwaga:** Schroedinger w swoim rozwiązaniu rozważa częstotliwość, lepiej więc wyjdź od wzoru z zadania 3. Masa, częstość kołowa, stała Plancka, all = 1.
 
@@ -145,7 +149,7 @@ $$
 E = -\frac{m_e}{2} \left(\frac{q_e^2}{4\pi\epsilon_0\hbar}\right)^2 \frac{1}{n^2}.
 $$
 
-4. Ze wzoru na serię Balmera (powrót z wzbudzenia z n-tej orbity na 2gą, $E = h \nu, c = \nu\lambda$):
+4. Ze wzoru na serię Balmera (powrót z wzbudzenia z n-tej orbity na drugą, $E = h \nu, c = \nu\lambda$):
 
 $$
 \frac{1}{\lambda} = R_H\left(\frac{1}{2^2} - \frac{1}{n^2}\right), \quad \text{gdzie} \ n = 3, 4, 5, 6, \ldots, \ R_H = 1.09677576 \times 10^7 \ \text{m}^{-1}
@@ -245,15 +249,15 @@ $$
 
 2. Mając stany $\frac{1}{\sqrt{2}}|0\rangle + \frac{1}{\sqrt{2}}|1\rangle$ oraz $\frac{1}{\sqrt{2}}|0\rangle - \frac{1}{\sqrt{2}}|1\rangle$, sprawdź ich ortogonalność (czyli policz ręcznie iloczyny skalarne stanów samych ze sobą i każdego z każdym).
 
-3. Dla stanu $\frac{1}{\sqrt{2}}|0\rangle + \frac{1}{\sqrt{2}}|1\rangle$ policz tzw. macierz gęstości, czyli wartość $\rho = |\psi\rangle\langle\psi|$. Stany niech reprezentują następującą postać: `|0⟩ = [1, 0]ᵀ`, `|1⟩ = [0, 1]ᵀ`, zaś $\langle 0| = [1 \ 0]$, $\langle 1| = [0 \ 1]$. Zwróć uwagę, że zapis $|\psi\rangle\langle\psi|$ oznacza, że mnożymy macierz kolumnową z macierzą wierszową i końcowo skończymy z macierzą $2 \times 2$, w przeciwieństwie do skalaru wynikającego z $\langle\psi|\psi\rangle$.
+3. Dla stanu $\frac{1}{\sqrt{2}}|0\rangle + \frac{1}{\sqrt{2}}|1\rangle$ policz tzw. macierz gęstości, czyli wartość $\rho = |\psi\rangle\langle\psi|$. Stany niech reprezentują następującą postać: `|0⟩ = [1, 0]^T`, `|1⟩ = [0, 1]^T`, zaś $\langle 0| = [1 \ 0]$, $\langle 1| = [0 \ 1]$. Zwróć uwagę, że zapis $|\psi\rangle\langle\psi|$ oznacza, że mnożymy macierz kolumnową z macierzą wierszową i końcowo skończymy z macierzą $2 \times 2$, w przeciwieństwie do skalaru wynikającego z $\langle\psi|\psi\rangle$.
 
 4. Mając stan będący sumą stanów własnych: $|\psi\rangle = \sum_{n=0}^{\infty} a_n |\phi_n\rangle$, oraz wiedząc, że $\langle\phi_m|\phi_n\rangle = \delta_{mn}$, wydobądź przez $\langle\phi_m|\psi\rangle$ wartość amplitudy $a_m$.
 
-7. Mając stan ket $|\psi\rangle = \sum_{n=0}^{\infty} a_n|\phi_n\rangle$, napisz jak będzie wyglądał stan bra $\langle\psi|$.
+5. Mając stan ket $|\psi\rangle = \sum_{n=0}^{\infty} a_n|\phi_n\rangle$, napisz jak będzie wyglądał stan bra $\langle\psi|$.
 
-8. Biorąc postać funkcji z poprzedniego zadania: ile wyniesie wartość $\langle\psi|\psi\rangle$ a ile $\langle\hat{A}\rangle = \frac{\langle\psi|\hat{A}|\psi\rangle}{\langle\psi|\psi\rangle}$?
+6. Biorąc postać funkcji z poprzedniego zadania: ile wyniesie wartość $\langle\psi|\psi\rangle$ a ile $\langle\hat{A}\rangle = \frac{\langle\psi|\hat{A}|\psi\rangle}{\langle\psi|\psi\rangle}$?
 
-9. Po założeniu konta na platformie IBM zawierającej Quantum Composer [https://quantum-computing.ibm.com/composer/docs/iqx/guide/the-qubit](https://quantum-computing.ibm.com/composer/docs/iqx/guide/the-qubit) (oraz posiłkując się [https://en.wikipedia.org/wiki/Quantum_logic_gate](https://en.wikipedia.org/wiki/Quantum_logic_gate)) wykonaj serię obliczeń na kwantowym komputerze. Udokumentuj swoje wysiłki wykonując serię screenów z własnej pracy, a nie przekopiowując rzeczy np. z tutorialu:
+7. Po założeniu konta na platformie IBM zawierającej Quantum Composer [https://quantum-computing.ibm.com/composer/docs/iqx/guide/the-qubit](https://quantum-computing.ibm.com/composer/docs/iqx/guide/the-qubit) (oraz posiłkując się [https://en.wikipedia.org/wiki/Quantum_logic_gate](https://en.wikipedia.org/wiki/Quantum_logic_gate)) wykonaj serię obliczeń na kwantowym komputerze. Udokumentuj swoje wysiłki wykonując serię screenów z własnej pracy, a nie przekopiowując rzeczy np. z tutorialu:
     - Stwórz jedno q-bitowy stan $|0\rangle$ oraz $|1\rangle$.
     - Zaprezentuj realizację flipu obu stanów oraz pokaż ręcznie jak to się odbywa na poziomie zapisu macierzowego.
     - Stwórz na jednym q-bicie superpozycję stanu $|0\rangle$ oraz $|1\rangle$, czyli $\frac{1}{\sqrt{2}}|0\rangle + \frac{1}{\sqrt{2}}|1\rangle$ oraz $\frac{1}{\sqrt{2}}|0\rangle - \frac{1}{\sqrt{2}}|1\rangle$. Pokaż na poziomie zapisu macierzowego powstanie tych stanów.
@@ -261,11 +265,11 @@ $$
     - Jaki będzie rezultat zadziałania bramką Hadamarda na stany już będące w superpozycji, czyli $\frac{1}{\sqrt{2}}|0\rangle + \frac{1}{\sqrt{2}}|1\rangle$ oraz $\frac{1}{\sqrt{2}}|0\rangle - \frac{1}{\sqrt{2}}|1\rangle$? Odpowiedź wygeneruj ręcznie i wykonaj na komputerze kwantowym.
     - Ręcznie pokaż, że bramka Hadamarda $H$ jest równoważna kombinacji dwóch kwantowych obrotów (najpierw 180 stopni względem osi $z$, a potem 90 stopni względem osi $y$), czyli $R_y\left(\frac{\pi}{2}\right) R_z(\pi) = iH$.
 
-10. Stwórz splątany układ dwu q-bitowy (entanglement) mając do dyspozycji na każdym q-bicie $|0\rangle$ oraz $|1\rangle$. Pamiętaj o iloczynie tensorowym i fakcie, że ostateczny stan będzie sumą realizacji $|0\rangle \otimes |0\rangle$, $|0\rangle \otimes |1\rangle$, $|1\rangle \otimes |0\rangle$, oraz $|1\rangle \otimes |1\rangle$. Naturalnie uwzględnij stosowne unormowanie zakładając, że każdy jest tak samo prawdopodobny. Zacznij od realizacji napisanej ręcznie i potem wykonaj realizację na komputerze kwantowym. Jeśli chcesz, to możesz też sprawdzić w działaniu [BernDirac](https://github.com/bernie-wu/BernDirac).
+8.  Stwórz splątany układ dwu q-bitowy (entanglement) mając do dyspozycji na każdym q-bicie $|0\rangle$ oraz $|1\rangle$. Pamiętaj o iloczynie tensorowym i fakcie, że ostateczny stan będzie sumą realizacji $|0\rangle \otimes |0\rangle$, $|0\rangle \otimes |1\rangle$, $|1\rangle \otimes |0\rangle$, oraz $|1\rangle \otimes |1\rangle$. Naturalnie uwzględnij stosowne unormowanie zakładając, że każdy jest tak samo prawdopodobny. Zacznij od realizacji napisanej ręcznie i potem wykonaj realizację na komputerze kwantowym. Jeśli chcesz, to możesz też sprawdzić w działaniu [BernDirac](https://github.com/bernie-wu/BernDirac).
 
-11. Podziałaj bramką Hadamarda na stan $|1\rangle \otimes |1\rangle$ zarówno w komputerze kwantowym jak i zrealizuj rachunki ręcznie (pamiętaj, że trzeba użyć bramkę Hadamarda z macierzą jedynkową: $H \otimes I_{2x2}$, by dało się to zestawić z otrzymanymi stanami. Nie zapomnij rozłożyć końcowego stanu na możliwe superpozycje. Rzecz powtórz dla stanu $|1\rangle \otimes |1\rangle$, ale tym razem zaaplikuj $I_{2x2} \otimes H$.
+9.  Podziałaj bramką Hadamarda na stan $|1\rangle \otimes |1\rangle$ zarówno w komputerze kwantowym jak i zrealizuj rachunki ręcznie (pamiętaj, że trzeba użyć bramkę Hadamarda z macierzą jedynkową: $H \otimes I_{2x2}$, by dało się to zestawić z otrzymanymi stanami. Nie zapomnij rozłożyć końcowego stanu na możliwe superpozycje. Rzecz powtórz dla stanu $|1\rangle \otimes |1\rangle$, ale tym razem zaaplikuj $I_{2x2} \otimes H$.
 
-12. Na ilu równoległych Wszechświatach toczy się ta partia szachów kwantowych?
+10. Na ilu równoległych Wszechświatach toczy się ta partia szachów kwantowych?
 
 ![](quantum_chess.png)
 
@@ -306,7 +310,7 @@ Należy się pobawić parametrami (np. liczbą klatek) i grafiką, by uczynić a
 
 ![](animate_3.png)
 
-Kod pochodzi z: [https://community.wolfram.com/groups/-/m/t/239088]([https://community.wolfram.com/groups/-/m/t/239088]) (pamiętaj o `PlotRange -> All`)
+Kod pochodzi z: [https://community.wolfram.com/groups/-/m/t/239088](https://community.wolfram.com/groups/-/m/t/239088) (pamiętaj o `PlotRange -> All`)
 
 ## Lista 9
 
@@ -374,15 +378,15 @@ $$
 
 ustal $\vec{b}_1$ oraz $\vec{b}_2$ jeśli $\vec{a}_1 = a\left(\frac{\sqrt{3}}{2}, -\frac{1}{2}\right)$ oraz $\vec{a}_2 = a\left(\frac{\sqrt{3}}{2}, \frac{1}{2}\right)$.
 
-1. Ustal wektory sieci odwrotnej dla romboidalnej 3D sieci pierwotnej z wektorami: $\vec{a}_1 = (1, 0, 1)$, $\vec{a}_2 = \left(\frac{1}{\sqrt{2}}, \frac{1}{\sqrt{2}}, 0\right)$, $\vec{a}_3 = \left(\frac{1}{\sqrt{2}}, 1 - \frac{1}{\sqrt{2}}, \sqrt{-1 + \sqrt{2}}\right)$.
+4. Ustal wektory sieci odwrotnej dla romboidalnej 3D sieci pierwotnej z wektorami: $\vec{a}_1 = (1, 0, 1)$, $\vec{a}_2 = \left(\frac{1}{\sqrt{2}}, \frac{1}{\sqrt{2}}, 0\right)$, $\vec{a}_3 = \left(\frac{1}{\sqrt{2}}, 1 - \frac{1}{\sqrt{2}}, \sqrt{-1 + \sqrt{2}}\right)$.
 
-2. Skonstruuj i narysuj ręcznie pierwszą strefę Brillouina grafenu, gdzie wektorami sieci są: $\vec{a}_1 = a_0 \left(\frac{\sqrt{3}}{2}, -\frac{1}{2}\right)$, $\vec{a}_2 = a_0 \left(\frac{\sqrt{3}}{2}, \frac{1}{2}\right)$.
+5. Skonstruuj i narysuj ręcznie pierwszą strefę Brillouina grafenu, gdzie wektorami sieci są: $\vec{a}_1 = a_0 \left(\frac{\sqrt{3}}{2}, -\frac{1}{2}\right)$, $\vec{a}_2 = a_0 \left(\frac{\sqrt{3}}{2}, \frac{1}{2}\right)$.
 
-3. Wykonaj wykres struktury energetycznej dla grafenu:
+6. Wykonaj wykres struktury energetycznej dla grafenu:
 
    ![](grafen.png)
 
-4. Zaczynając od $\epsilon_\mathbf{k}^{\pm}(k_x, k_y) = \pm\gamma\sqrt{3 + 2\sum_{i=1}^{3}\cos(\mathbf{k} \cdot \mathbf{a}_i)}$, gdzie tym razem mamy 2D wektory $\mathbf{a}_1 = a\sqrt{3} \cdot (1, 0)$, $\mathbf{a}_2 = a\sqrt{3} \cdot (1/2, \sqrt{3}/2)$, $\mathbf{a}_3 = \mathbf{a}_2 - \mathbf{a}_1$ zaś $\mathbf{k}$ jest wektorem z pierwszej strefy Brillouina, pokaż, że dyspersja energii jest liniowa w pobliżu punktów Diraca:
+7. Zaczynając od $\epsilon_\mathbf{k}^{\pm}(k_x, k_y) = \pm\gamma\sqrt{3 + 2\sum_{i=1}^{3}\cos(\mathbf{k} \cdot \mathbf{a}_i)}$, gdzie tym razem mamy 2D wektory $\mathbf{a}_1 = a\sqrt{3} \cdot (1, 0)$, $\mathbf{a}_2 = a\sqrt{3} \cdot (1/2, \sqrt{3}/2)$, $\mathbf{a}_3 = \mathbf{a}_2 - \mathbf{a}_1$ zaś $\mathbf{k}$ jest wektorem z pierwszej strefy Brillouina, pokaż, że dyspersja energii jest liniowa w pobliżu punktów Diraca:
    
 $$
 \mathbf{K}^{\pm} = \frac{4\pi}{3\sqrt{3}a}(\pm 1, 0),
